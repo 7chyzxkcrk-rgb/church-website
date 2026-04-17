@@ -29,9 +29,10 @@ app.get('/api/albums', async (req, res) => {
 })
 
 // React 빌드 파일 서비스
-app.use(express.static(path.join(__dirname, '../client/dist')))
+const distPath = path.join(__dirname, 'dist')
+app.use(express.static(distPath))
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/dist/index.html'))
+  res.sendFile(path.join(distPath, 'index.html'))
 })
 
 const PORT = process.env.PORT || 3000
