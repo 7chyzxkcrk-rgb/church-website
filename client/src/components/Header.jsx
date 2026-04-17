@@ -5,20 +5,19 @@ export default function Header() {
 
   return (
     <div>
-      {/* 상단 배너 - 갈색 반투명 */}
-      <div style={{backgroundColor: 'rgba(101, 67, 33, 0.5)'}} className="text-white text-center py-2 text-xs md:text-sm tracking-widest">
-        Welcome to SunCheon Soojeong Church
-      </div>
-
-      {/* 히어로 섹션 */}
+      {/* 전체를 배경 이미지로 감싸기 */}
       <div className="relative" style={{
         backgroundImage: 'url(/church.jpg)',
         backgroundSize: '100%',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
-        height: '400px'
       }}>
         <div className="absolute inset-0 bg-black opacity-40"></div>
+
+        {/* 상단 배너 - 진한 붉은 갈색 반투명 */}
+        <div className="relative z-10 text-white text-center py-2 text-xs md:text-sm tracking-widest" style={{backgroundColor: 'rgba(120, 40, 20, 0.7)'}}>
+          Welcome to SunCheon Soojeong Church
+        </div>
 
         {/* 로고 + 햄버거 */}
         <div className="relative z-10 flex items-center justify-between px-4 md:px-8 py-4">
@@ -40,7 +39,7 @@ export default function Header() {
             <span className="cursor-pointer hover:text-white">전체메뉴</span>
           </div>
 
-          {/* 네비게이션 - 히어로 안에 위아래 선 포함 */}
+          {/* 네비게이션 */}
           <div className="mt-6 border-t border-b border-white border-opacity-50 py-2">
             <ul className="hidden md:flex justify-center gap-8 text-sm font-medium text-white">
               {['교회안내', '예배와 영성', '교회학교', '전도와 선교', '교회소식', '수정갤러리'].map(item => (
@@ -54,6 +53,9 @@ export default function Header() {
             </ul>
           </div>
         </div>
+
+        {/* 빈공간 - 교회 건물 하단이 보이도록 */}
+        <div className="relative z-10 h-32"></div>
       </div>
     </div>
   )
