@@ -9,7 +9,11 @@ export default function Header() {
         src="/church.jpg" 
         alt="순천수정교회" 
         className="w-full object-contain"
-        style={{transform: 'scale(1.08)', transformOrigin: 'center center'}}
+        style={{
+          transform: 'scale(1.08)', 
+          transformOrigin: 'center top',
+          marginBottom: '-10%'
+        }}
       />
 
       <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(0,0,0,0.4)'}}>
@@ -23,7 +27,6 @@ export default function Header() {
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-white" style={{fontSize: 'clamp(20px, 2.5vw, 32px)'}}>☰</button>
         </div>
 
-        {/* 내용을 위로 올리기 - justify-start로 변경 + pt 추가 */}
         <div className="text-center px-4 flex-1 flex flex-col justify-start pt-4">
           <h1 className="font-bold text-teal-300" style={{fontFamily: 'serif', fontSize: 'clamp(28px, 5vw, 64px)'}}>여호와는 나의 목자시니</h1>
           <p className="text-white mt-3" style={{fontSize: 'clamp(11px, 1.5vw, 20px)'}}>여호와는 나의 목자시니 내게 부족함이 없으리로다</p>
