@@ -7,12 +7,13 @@ export default function Header() {
     <div>
       <div className="relative" style={{
         backgroundImage: 'url(/church.jpg)',
-        backgroundSize: '100%',
-        backgroundPosition: 'center center',
+        backgroundSize: 'contain',
+        backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
+        backgroundColor: '#1a1a2e',
         paddingBottom: '200px'
       }}>
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <div className="absolute inset-0" style={{backgroundColor: 'rgba(0,0,0,0.35)'}}></div>
 
         <div className="relative z-10 text-white text-center py-2 text-xs md:text-sm tracking-widest" style={{backgroundColor: 'rgba(101, 60, 20, 0.7)'}}>
           Welcome to SunCheon Soojeong Church
