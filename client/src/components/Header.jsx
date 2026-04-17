@@ -5,7 +5,6 @@ export default function Header() {
 
   return (
     <div>
-      {/* 전체를 배경 이미지로 감싸기 */}
       <div className="relative" style={{
         backgroundImage: 'url(/church.jpg)',
         backgroundSize: '100%',
@@ -14,18 +13,16 @@ export default function Header() {
       }}>
         <div className="absolute inset-0 bg-black opacity-40"></div>
 
-        {/* 상단 배너 - 진한 붉은 갈색 반투명 */}
-        <div className="relative z-10 text-white text-center py-2 text-xs md:text-sm tracking-widest" style={{backgroundColor: 'rgba(120, 40, 20, 0.7)'}}>
+        {/* 상단 배너 - 따뜻한 갈색 */}
+        <div className="relative z-10 text-white text-center py-2 text-xs md:text-sm tracking-widest" style={{backgroundColor: 'rgba(101, 60, 20, 0.7)'}}>
           Welcome to SunCheon Soojeong Church
         </div>
 
-        {/* 로고 + 햄버거 */}
         <div className="relative z-10 flex items-center justify-between px-4 md:px-8 py-4">
           <span className="text-lg md:text-xl font-bold text-white">순천수정교회</span>
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl text-white">☰</button>
         </div>
 
-        {/* 히어로 텍스트 */}
         <div className="relative z-10 text-center py-6 px-4">
           <h1 className="text-3xl md:text-4xl font-bold text-teal-300" style={{fontFamily: 'serif'}}>여호와는 나의 목자시니</h1>
           <p className="text-white mt-3 text-xs md:text-sm">여호와는 나의 목자시니 내게 부족함이 없으리로다</p>
@@ -39,7 +36,6 @@ export default function Header() {
             <span className="cursor-pointer hover:text-white">전체메뉴</span>
           </div>
 
-          {/* 네비게이션 */}
           <div className="mt-6 border-t border-b border-white border-opacity-50 py-2">
             <ul className="hidden md:flex justify-center gap-8 text-sm font-medium text-white">
               {['교회안내', '예배와 영성', '교회학교', '전도와 선교', '교회소식', '수정갤러리'].map(item => (
@@ -54,8 +50,8 @@ export default function Header() {
           </div>
         </div>
 
-        {/* 빈공간 - 교회 건물 하단이 보이도록 */}
-        <div className="relative z-10 h-32"></div>
+        {/* 카드가 올라올 공간 */}
+        <div className="relative z-10 h-24"></div>
       </div>
     </div>
   )
