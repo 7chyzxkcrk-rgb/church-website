@@ -11,11 +11,12 @@ export default function Header() {
 
       <div className="relative" style={{
         backgroundImage: 'url(/church.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center top',
-        height: '350px'
+        backgroundSize: '100%',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        height: '400px'
       }}>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-40"></div>
 
         <div className="relative z-10 flex items-center justify-between px-4 md:px-8 py-4">
           <span className="text-lg md:text-xl font-bold text-white">순천수정교회</span>
