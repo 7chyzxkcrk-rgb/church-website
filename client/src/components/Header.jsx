@@ -10,7 +10,7 @@ export default function Header() {
         backgroundSize: '100%',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
-        paddingBottom: '120px'
+        paddingBottom: '200px'
       }}>
         <div className="absolute inset-0 bg-black opacity-40"></div>
 

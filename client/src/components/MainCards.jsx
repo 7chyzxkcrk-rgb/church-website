@@ -7,8 +7,8 @@ export default function MainCards() {
   ]
 
   return (
-    <div className="relative -mt-24 z-20 px-8 md:px-16">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
+    <div className="relative -mt-40 z-20 px-8 md:px-16 pb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
         {cards.map(card => (
           <div key={card.title} className={`${card.bg} text-white cursor-pointer hover:opacity-90 transition-opacity rounded shadow-lg`}>
             <div className="w-full h-32 bg-gray-500 flex items-center justify-center rounded-t">
