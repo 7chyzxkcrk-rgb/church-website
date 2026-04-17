@@ -12,7 +12,7 @@ export default function Header() {
         style={{
           transform: 'scale(1.08)', 
           transformOrigin: 'center top',
-          marginBottom: '-10%'
+          marginBottom: '-5%'
         }}
       />
 
