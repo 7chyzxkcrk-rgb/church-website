@@ -4,12 +4,13 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className="relative">
-      {/* 실제 이미지 태그 - 비율 유지 */}
+    <div className="relative overflow-hidden">
+      {/* 실제 이미지 태그 - 비율 유지하면서 약간 확대 */}
       <img 
         src="/church.jpg" 
         alt="순천수정교회" 
         className="w-full object-contain"
+        style={{transform: 'scale(1.08)', transformOrigin: 'center center'}}
       />
 
       {/* 이미지 위에 겹치는 오버레이 + 내용 */}
