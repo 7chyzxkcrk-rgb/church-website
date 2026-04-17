@@ -7,9 +7,10 @@ export default function Header() {
     <div>
       <div className="relative" style={{
         backgroundImage: 'url(/church.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center 20%',
+        backgroundSize: 'auto 100%',
+        backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
+        backgroundColor: '#1f2937',
       }}>
         <div className="absolute inset-0" style={{backgroundColor: 'rgba(0,0,0,0.4)'}}></div>
 
