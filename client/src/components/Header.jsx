@@ -10,10 +10,10 @@ export default function Header() {
         backgroundSize: '100%',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
+        paddingBottom: '120px'
       }}>
         <div className="absolute inset-0 bg-black opacity-40"></div>
 
-        {/* 상단 배너 - 따뜻한 갈색 */}
         <div className="relative z-10 text-white text-center py-2 text-xs md:text-sm tracking-widest" style={{backgroundColor: 'rgba(101, 60, 20, 0.7)'}}>
           Welcome to SunCheon Soojeong Church
         </div>
@@ -49,9 +49,6 @@ export default function Header() {
             </ul>
           </div>
         </div>
-
-        {/* 카드가 올라올 공간 */}
-        <div className="relative z-10 h-24"></div>
       </div>
     </div>
   )

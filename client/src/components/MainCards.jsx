@@ -7,15 +7,15 @@ export default function MainCards() {
   ]
 
   return (
-    <div className="relative -mt-20 z-20 px-4 md:px-8">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-5xl mx-auto">
+    <div className="relative -mt-24 z-20 px-8 md:px-16">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
         {cards.map(card => (
           <div key={card.title} className={`${card.bg} text-white cursor-pointer hover:opacity-90 transition-opacity rounded shadow-lg`}>
-            <div className="w-full h-36 bg-gray-500 flex items-center justify-center rounded-t">
+            <div className="w-full h-32 bg-gray-500 flex items-center justify-center rounded-t">
               <span className="text-gray-300 text-xs">사진 준비중</span>
             </div>
-            <div className="p-4">
-              <h3 className="text-base font-bold">{card.title}</h3>
+            <div className="p-3">
+              <h3 className="text-sm font-bold">{card.title}</h3>
               <p className="text-xs mt-1 text-gray-300">{card.desc}</p>
             </div>
           </div>
