@@ -7,9 +7,9 @@ export default function MainCards() {
   ]
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4">
+    <div className="grid grid-cols-1 md:grid-cols-4">
       {cards.map(card => (
-        <div key={card.title} className={`${card.bg} text-white p-8 cursor-pointer hover:opacity-90 transition-opacity min-h-48 flex flex-col justify-end`}>
+        <div key={card.title} className={`${card.bg} text-white p-8 cursor-pointer hover:opacity-90 transition-opacity min-h-36 flex flex-col justify-end`}>
           <h3 className="text-xl font-bold">{card.title}</h3>
           <p className="text-sm mt-2 text-gray-300">{card.desc}</p>
         </div>
