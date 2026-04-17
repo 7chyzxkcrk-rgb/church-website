@@ -1,15 +1,13 @@
 require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
+const path = require('path')
 
 const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.get('/', (req, res) => {
-  res.json({ message: '순천수정교회 서버 작동중!' })
-})
-
+// API 라우트
 app.get('/api/bulletins', async (req, res) => {
   try {
     const pool = require('./db')
@@ -28,6 +26,12 @@ app.get('/api/albums', async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message })
   }
+})
+
+// React 빌드 파일 서비스
+app.use(express.static(path.join(__dirname, '../client/dist')))
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'))
 })
 
 const PORT = process.env.PORT || 3000

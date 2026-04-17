@@ -10,33 +10,47 @@ export default function Header() {
         Welcome to SunCheon Soojeong Church
       </div>
 
-      {/* 헤더 */}
-      <div className="relative bg-gray-100">
-        <div className="flex items-center justify-between px-8 py-4">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="순천수정교회" className="h-12" onError={e => e.target.style.display='none'} />
-            <span className="text-xl font-bold text-gray-800">순천수정교회</span>
-          </div>
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl">☰</button>
+      {/* 헤더 - 배경 이미지 */}
+      <div className="relative" style={{
+        backgroundImage: 'url(/church-website/church.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '400px'
+      }}>
+        {/* 어두운 오버레이 */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+
+        {/* 로고 + 햄버거 */}
+        <div className="relative z-10 flex items-center justify-between px-8 py-4">
+          <span className="text-xl font-bold text-white">순천수정교회</span>
+          <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl text-white">☰</button>
         </div>
 
         {/* 히어로 텍스트 */}
-        <div className="text-center py-8 bg-gray-200">
-          <h1 className="text-4xl font-bold text-teal-500" style={{fontFamily: 'serif'}}>여호와는 나의 목자시니</h1>
-          <p className="text-gray-600 mt-2 text-sm">여호와는 나의 목자시니 내게 부족함이 없으리로다</p>
-          <p className="text-gray-600 text-sm">그가 나를 푸른 풀밭에 누이시며 쉴 만한 물 가로 인도하시는도다</p>
-          <p className="text-gray-500 text-xs mt-1">(시편 23:1-2)</p>
-        </div>
+        <div className="relative z-10 text-center py-16">
+          <h1 className="text-5xl font-bold text-teal-300" style={{fontFamily: 'serif'}}>여호와는 나의 목자시니</h1>
+          <p className="text-white mt-4 text-sm">여호와는 나의 목자시니 내게 부족함이 없으리로다</p>
+          <p className="text-white text-sm">그가 나를 푸른 풀밭에 누이시며 쉴 만한 물 가로 인도하시는도다</p>
+          <p className="text-gray-300 text-xs mt-1">(시편 23:1-2)</p>
 
-        {/* 네비게이션 */}
-        <nav className="bg-white border-t border-b border-gray-200">
-          <ul className="flex justify-center gap-8 py-3 text-sm font-medium text-gray-700">
-            {['교회안내', '예배와 영성', '교회학교', '전도와 선교', '교회소식', '수정갤러리'].map(item => (
-              <li key={item} className="cursor-pointer hover:text-teal-500 transition-colors">{item}</li>
-            ))}
-          </ul>
-        </nav>
+          {/* 로그인/전체메뉴 */}
+          <div className="mt-4 flex justify-center gap-4 text-xs text-gray-300">
+            <span className="cursor-pointer hover:text-white">처음으로</span>
+            <span className="cursor-pointer hover:text-white">로그인</span>
+            <span className="cursor-pointer hover:text-white">회원가입</span>
+            <span className="cursor-pointer hover:text-white">전체메뉴</span>
+          </div>
+        </div>
       </div>
+
+      {/* 네비게이션 */}
+      <nav className="bg-white border-t border-b border-gray-200">
+        <ul className="flex justify-center gap-8 py-3 text-sm font-medium text-gray-700">
+          {['교회안내', '예배와 영성', '교회학교', '전도와 선교', '교회소식', '수정갤러리'].map(item => (
+            <li key={item} className="cursor-pointer hover:text-teal-500 transition-colors">{item}</li>
+          ))}
+        </ul>
+      </nav>
     </div>
   )
 }
