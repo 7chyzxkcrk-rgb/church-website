@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="bg-white min-h-screen">
-      <div className="max-w-7xl mx-auto">
+      <div style={{maxWidth: '1400px'}} className="mx-auto">
         <Header />
         <MainCards />
         <QuickMenu />
