@@ -30,41 +30,6 @@ export default function Header() {
         <div className="text-center px-4 flex-1 flex flex-col justify-start pt-4">
           <h1 className="font-bold" style={{fontFamily: 'serif', fontSize: 'clamp(28px, 5vw, 64px)', color: '#100e55'}}>여호와는 나의 목자시니</h1>
           <p className="mt-3" style={{fontSize: 'clamp(11px, 1.5vw, 20px)', color: '#4e0810'}}>여호와는 나의 목자시니 내게 부족함이 없으리로다</p>
-          <p style={{fontSize: 'clamp(11px, 1.5vw, 20px)', color: '#4e0810'}}>그가 나를 푸른 풀밭에 누이시며 쉴 만한 물 가로 인
-cd ~/Documents/GitHub/church-website/client
-cat > src/components/Header.jsx << 'EOF'
-import { useState } from 'react'
-
-export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false)
-
-  return (
-    <div className="relative overflow-hidden">
-      <img 
-        src="/church.jpg" 
-        alt="순천수정교회" 
-        className="w-full object-contain"
-        style={{
-          transform: 'scale(1.08)', 
-          transformOrigin: 'center top',
-          marginBottom: '-5%'
-        }}
-      />
-
-      <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(50,50,50,0.4)'}}>
-        
-        <div className="text-white text-center py-2 tracking-widest" style={{backgroundColor: 'rgba(101, 60, 20, 0.7)', fontSize: 'clamp(10px, 1.2vw, 16px)'}}>
-          Welcome to SunCheon Soojeong Church
-        </div>
-
-        <div className="flex items-center justify-between px-4 md:px-8 py-4">
-          <span className="font-bold text-white" style={{fontSize: 'clamp(16px, 2vw, 28px)'}}>순천수정교회</span>
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-white" style={{fontSize: 'clamp(20px, 2.5vw, 32px)'}}>☰</button>
-        </div>
-
-        <div className="text-center px-4 flex-1 flex flex-col justify-start pt-4">
-          <h1 className="font-bold" style={{fontFamily: 'serif', fontSize: 'clamp(28px, 5vw, 64px)', color: '#100e55'}}>여호와는 나의 목자시니</h1>
-          <p className="mt-3" style={{fontSize: 'clamp(11px, 1.5vw, 20px)', color: '#4e0810'}}>여호와는 나의 목자시니 내게 부족함이 없으리로다</p>
           <p style={{fontSize: 'clamp(11px, 1.5vw, 20px)', color: '#4e0810'}}>그가 나를 푸른 풀밭에 누이시며 쉴 만한 물 가로 인도하시는도다</p>
           <p className="mt-1" style={{fontSize: 'clamp(10px, 1.1vw, 15px)', color: '#100e55'}}>(시편 23:1-2)</p>
 
