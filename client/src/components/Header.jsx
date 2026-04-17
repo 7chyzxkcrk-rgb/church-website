@@ -8,7 +8,7 @@ export default function Header() {
       <div className="relative flex flex-col" style={{
         backgroundImage: 'url(/church.jpg)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center 20%',
+        backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
         minHeight: '100vh',
       }}>
