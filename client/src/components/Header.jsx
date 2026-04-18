@@ -13,19 +13,19 @@ export default function Header() {
           transform: 'scale(1.08)', 
           transformOrigin: 'center top',
           marginBottom: '-5%',
-          filter: 'brightness(0.7)'
+          filter: 'brightness(0.7) saturate(0.5)'
         }}
       />
 
-      <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(150,150,150,0.4)'}}>
+      <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(255,255,255,0.3)'}}>
         
         <div className="text-white text-center py-2 tracking-widest" style={{backgroundColor: 'rgba(101, 60, 20, 0.7)', fontSize: 'clamp(10px, 1.2vw, 16px)'}}>
           Welcome to SunCheon Soojeong Church
         </div>
 
         <div className="flex items-center justify-between px-4 md:px-8 py-4">
-          <span className="font-bold text-white" style={{fontSize: 'clamp(16px, 2vw, 28px)'}}>순천수정교회</span>
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-white" style={{fontSize: 'clamp(20px, 2.5vw, 32px)'}}>☰</button>
+          <span className="font-bold text-gray-800" style={{fontSize: 'clamp(16px, 2vw, 28px)'}}>순천수정교회</span>
+          <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-800" style={{fontSize: 'clamp(20px, 2.5vw, 32px)'}}>☰</button>
         </div>
 
         <div className="text-center px-4 flex-1 flex flex-col justify-start pt-4">
@@ -41,15 +41,15 @@ export default function Header() {
             <span className="cursor-pointer text-white hover:opacity-70">전체메뉴</span>
           </div>
 
-          <div className="mt-5 border-t border-b border-white border-opacity-50 py-2">
-            <ul className="hidden md:flex justify-center gap-8 font-medium text-white" style={{fontSize: 'clamp(12px, 1.5vw, 20px)'}}>
+          <div className="mt-5 border-t border-b border-gray-600 border-opacity-50 py-2">
+            <ul className="hidden md:flex justify-center gap-8 font-medium text-gray-800" style={{fontSize: 'clamp(12px, 1.5vw, 20px)'}}>
               {['교회안내', '예배와 영성', '교회학교', '전도와 선교', '교회소식', '수정갤러리'].map(item => (
-                <li key={item} className="cursor-pointer hover:text-gray-300 transition-colors">{item}</li>
+                <li key={item} className="cursor-pointer hover:text-gray-600 transition-colors">{item}</li>
               ))}
             </ul>
-            <ul className="flex md:hidden justify-around text-xs font-medium text-white">
+            <ul className="flex md:hidden justify-around text-xs font-medium text-gray-800">
               {['교회안내', '예배와 영성', '교회학교', '전도와 선교', '교회소식', '수정갤러리'].map(item => (
-                <li key={item} className="cursor-pointer hover:text-gray-300 transition-colors text-center">{item}</li>
+                <li key={item} className="cursor-pointer hover:text-gray-600 transition-colors text-center">{item}</li>
               ))}
             </ul>
           </div>
