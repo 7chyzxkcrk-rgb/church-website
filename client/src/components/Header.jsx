@@ -17,7 +17,7 @@ export default function Header() {
         }}
       />
 
-      <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(255,255,255,0.3)'}}>
+      <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(255,255,255,0.5)'}}>
         
         <div className="text-white text-center py-2 tracking-widest" style={{backgroundColor: 'rgba(101, 60, 20, 0.7)', fontSize: 'clamp(10px, 1.2vw, 16px)'}}>
           Welcome to SunCheon Soojeong Church
