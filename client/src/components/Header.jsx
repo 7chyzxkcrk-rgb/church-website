@@ -12,11 +12,12 @@ export default function Header() {
         style={{
           transform: 'scale(1.08)', 
           transformOrigin: 'center top',
-          marginBottom: '-5%'
+          marginBottom: '-5%',
+          filter: 'brightness(0.7)'
         }}
       />
 
-      <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(50,50,50,0.4)'}}>
+      <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(150,150,150,0.4)'}}>
         
         <div className="text-white text-center py-2 tracking-widest" style={{backgroundColor: 'rgba(101, 60, 20, 0.7)', fontSize: 'clamp(10px, 1.2vw, 16px)'}}>
           Welcome to SunCheon Soojeong Church
