@@ -17,7 +17,7 @@ export default function Header() {
         }}
       />
 
-      <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(255,255,255,0.5)'}}>
+      <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(255,255,255,0.7)'}}>
         
         <div className="text-white text-center py-2 tracking-widest" style={{backgroundColor: 'rgba(101, 60, 20, 0.7)', fontSize: 'clamp(10px, 1.2vw, 16px)'}}>
           Welcome to SunCheon Soojeong Church
@@ -35,13 +35,13 @@ export default function Header() {
           <p className="mt-1" style={{fontSize: 'clamp(10px, 1.1vw, 15px)', color: '#100e55'}}>(시편 23:1-2)</p>
 
           <div className="mt-4 flex justify-center gap-4" style={{fontSize: 'clamp(10px, 1.1vw, 15px)'}}>
-            <span className="cursor-pointer text-white hover:opacity-70">처음으로</span>
-            <span className="cursor-pointer text-white hover:opacity-70">로그인</span>
-            <span className="cursor-pointer text-white hover:opacity-70">회원가입</span>
-            <span className="cursor-pointer text-white hover:opacity-70">전체메뉴</span>
+            <span className="cursor-pointer text-gray-600 hover:opacity-70">처음으로</span>
+            <span className="cursor-pointer text-gray-600 hover:opacity-70">로그인</span>
+            <span className="cursor-pointer text-gray-600 hover:opacity-70">회원가입</span>
+            <span className="cursor-pointer text-gray-600 hover:opacity-70">전체메뉴</span>
           </div>
 
-          <div className="mt-5 border-t border-b border-gray-600 border-opacity-50 py-2">
+          <div className="mt-5 border-t border-b border-gray-400 border-opacity-50 py-2">
             <ul className="hidden md:flex justify-center gap-8 font-medium text-gray-800" style={{fontSize: 'clamp(12px, 1.5vw, 20px)'}}>
               {['교회안내', '예배와 영성', '교회학교', '전도와 선교', '교회소식', '수정갤러리'].map(item => (
                 <li key={item} className="cursor-pointer hover:text-gray-600 transition-colors">{item}</li>
