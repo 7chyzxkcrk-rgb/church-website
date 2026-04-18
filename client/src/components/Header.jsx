@@ -20,10 +20,9 @@ export default function Header() {
       <div className="absolute inset-0 flex flex-col" style={{backgroundColor: 'rgba(255,255,255,0.7)'}}>
         
         {/* 상단 배너 - 살구색 */}
-        <div className="text-center py-2 tracking-widest" style={{backgroundColor: '#fed7aa', fontSize: 'clamp(10px, 1.2vw, 16px)'}}>
-          <span className="inline-block px-4 py-1 rounded" style={{backgroundColor: '#fed7aa', color: '#7c3a1e'}}>
-            순천수정교회를 방문해주셔서 감사합니다.
-          </span>
+        <div className="text-center py-2 tracking-widest" style={{backgroundColor: '#fed7aa'}}>
+          <p style={{fontSize: 'clamp(10px, 1.2vw, 16px)', color: '#7c3a1e'}}>Welcome to SunCheon Soojeong Church</p>
+          <p style={{fontSize: 'clamp(10px, 1.2vw, 16px)', color: '#7c3a1e'}}>순천수정교회를 방문해주셔서 감사합니다.</p>
         </div>
 
         <div className="flex items-center justify-between px-4 md:px-8 py-4">
